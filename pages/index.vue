@@ -30,7 +30,9 @@
               <v-card-actions>
                 <v-btn
                   color="orange"
-                  text>
+                  text
+                  target="_blank"
+                  :href="article.url">
                   Explore
                 </v-btn>
               </v-card-actions>
