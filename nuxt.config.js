@@ -43,6 +43,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
+    '@nuxtjs/onesignal',
     '@nuxtjs/pwa'
   ],
   /*
@@ -63,6 +64,15 @@ export default {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
         }
+      }
+    }
+  },
+  oneSignal: {
+    init: {
+      appId: 'c8477d98-b48f-40a9-986b-176085b46c80',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: false
       }
     }
   },
